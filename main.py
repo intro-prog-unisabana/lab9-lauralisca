@@ -29,7 +29,6 @@ def main():
                     balance = float(input("Enter the initial balance:\n"))
                     account = BankAccount(account_number, balance)
                     person.add_account(account)
-
                     found = True
                     break 
 
@@ -41,6 +40,8 @@ def main():
         elif choice == "3":
             if len(people) == 0:
                 print("No data to show.")
+            else:
+                balance_summary(people)
 
         # Option 4: Quit
         elif choice == "4":
