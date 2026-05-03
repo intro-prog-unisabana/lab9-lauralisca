@@ -21,7 +21,7 @@ def balance_summary(person_list):
         total = 0
         for account in person.accounts:
             total += account.balance
-        print (f"{person.name} : {total: 2f}")
+        print (f"{person.name} : {total:.2f}")
 
     
 
