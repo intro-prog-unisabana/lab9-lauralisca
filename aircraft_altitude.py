@@ -14,7 +14,11 @@ def main():
             continue
 
         action = parts[0]
-        feet = int(parts[1])
+
+        try:
+            feet = int(parts[1])
+        except:
+            continue
 
         if action == "A":
             plane.ascent(feet)
