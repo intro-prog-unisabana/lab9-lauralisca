@@ -1,4 +1,5 @@
 from aircraft import Aircraft
+
 def main():
     model = input()
     plane = Aircraft(model)
@@ -21,9 +22,9 @@ def main():
             continue
 
         if action == "A":
-            plane.ascent(feet)
+            plane.climb(feet)
         elif action == "D":
-            plane.descent(feet)
+            plane.descend(feet)
 
     print(f"Final altitude: {plane.altitude} feet")
 
